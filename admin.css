@@ -1,0 +1,322 @@
+/* Admin Table */
+.widefat.fixed {
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.widefat.fixed th,
+.widefat.fixed td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.widefat.fixed th {
+    background-color: #f7f7f7;
+    text-align: left;
+}
+
+/* Buttons */
+.button-primary {
+    background-color: #0073aa;
+    border-color: #006799;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: none;
+    cursor: pointer;
+    padding: 5px 12px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.button-primary:hover {
+    background-color: #006799;
+}
+
+.button-danger {
+    background-color: #dc3232;
+    border-color: #dc3232;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.button-danger:hover {
+    background-color: #b52b2b;
+}
+/* Improved admin table styling */
+.widefat.fixed.striped tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.widefat.fixed th {
+    background-color: #eee;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 8px;
+    border-bottom: 2px solid #ccc;
+}
+
+.widefat.fixed td {
+    padding: 8px 6px;
+    vertical-align: middle;
+}
+
+/* Buttons */
+.button-primary {
+    background-color: #0073aa;
+    border-color: #006799;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border-width: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: #006799;
+}
+
+.button-danger {
+    background-color: #dc3232;
+    border-color: #dc3232;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    border-width: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-danger:hover {
+    background-color: #b52b2b;
+}
+.custom-input-style {
+    padding: 1px 10px !important;       /* Override Tailwind padding */
+    line-height: 2 !important;
+    min-height: 30px !important;
+    height: 31px !important;
+    border-radius: 20px !important;
+    border: 1px solid #cac5c5 !important;
+}
+/* quantity admin *//* Remove default input number arrows */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Container with border */
+.relative {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee; /* Light border around the entire container */
+    border-radius: 0.375rem; /* Rounded corners for the container */
+    padding: 0.25rem; /* Small padding inside */
+}
+
+/* Input field styling */
+.quantity-input {
+    width: 4rem; /* Set width for the input */
+    height: 2.5rem; /* Height to match the buttons */
+    text-align: center;
+    font-size: 1.2rem;
+    border: none; /* Remove default border */
+    padding-left: 2.5rem; /* Padding for minus button */
+    padding-right: 2.5rem; /* Padding for plus button */
+    border-radius: 0.375rem; /* Rounded corners */
+    outline: none;
+}
+
+/* Button styling */
+.quantity-btn {
+    background-color: #e2e8f0;
+    color: #2d6a4f;
+    font-size: 1.2rem;
+    width: 2rem; /* Smaller button size */
+    height: 2rem; /* Matching height with the input */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Circular buttons */
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* Left button (minus) */
+.left-btn {
+    left: 0;
+    border-radius: 50% 0 0 50%;
+}
+
+/* Right button (plus) */
+.right-btn {
+    right: 0;
+    border-radius: 0 50% 50% 0;
+}
+
+/* Remove button outline and appearance */
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+    border: 0;
+}
+
+/* Hover effect for buttons */
+.quantity-btn:hover {
+    background-color: #d1d9e6;
+}
+.relative.flex.items-center.break {
+    width: 143px;
+    height: 34px;
+    border: 1px solid #d9d9d9;
+    border-radius: 16px;
+}
+input#ccc_quantity_min,
+input#ccc_quantity_max {
+    border: none;
+    background: none;
+}
+
+
+/* Remove the outline when the input is focused */
+input#ccc_quantity_min:focus,
+input#ccc_quantity_max:focus {
+    outline: none; /* Removes the default outline */
+    box-shadow: none; /* Remove any default box-shadow */
+}
+
+/* Custom styling for the special class "custom-input" */
+.custom-input {
+    padding: 4px 3px 4px 9px; /* Padding for top-right-bottom-left */
+    border-radius: 17px; /* Rounded corners */
+    border: 1px solid #eee; /* Light border */
+    width: 100%; /* Ensure the inputs take full width */
+    font-size: 1rem; /* Adjust font size to match your design */
+    outline: none; /* Remove outline on focus */
+}
+
+/* On focus: add a subtle focus effect */
+.custom-input:focus {
+    outline: none; /* Removes the default outline */
+    border: 1px solid #ccc; /* Custom border color on focus */
+    box-shadow: 0 0 0 2px rgba(0, 150, 136, 0.2); /* Optional: subtle shadow effect on focus */
+}
+select.custom-input.mb-6,
+input.custom-input.mb-4 {
+    width: 300px;
+    padding: 1px 26px 1px 8px;
+    border: 1.5px solid #d1cece;
+    border-radius: 23px;
+    font-size: 14px;
+}
+/* Hide the default file input */
+.file-input {
+    display: none; /* Hide the default file input */
+}
+
+/* Style the custom file upload button */
+.file-upload-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #f9fafb;
+    width: 300px;
+}
+
+.file-upload-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #4caf50;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.file-upload-btn:hover {
+    background-color: #45a049;
+}
+
+/* Style for the SVG icon inside the button */
+.file-upload-icon {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Optional: style for the "No file chosen" text */
+.file-upload-btn span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Optional: Style for displaying the product image */
+.custom-input ~ .mt-4 img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    padding: 4px;
+}
+
+.wrap.max-w-5xl.mx-auto.p-6.bg-white.rounded-md.shadow-md.all_wrap_plugin {
+    direction: rtl;
+    font-family: cairo !important;
+}
+
+.the-whole-form{
+    font-family: cairo !important;
+
+}
+
+a.text-gray-700.hover\:text-green-600.pb-2.first_link_tab,
+a.border-b-4.border-gray-500.text-green-600.font-semibold.pb-2.first_link_tab {
+    margin: 0px 19px;
+}
+a.border-b-4.border-gray-500.text-green-600.font-semibold.pb-2.first_link_tab:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+a.border-b-4.border-gray-500.text-green-600.font-semibold.pb-2.shadow-none,
+a.text-gray-700.hover\:text-green-600.pb-2.first_link_tab.shadow-none {
+    box-shadow: none !important;
+
+}
+
+h1.text-3xl.font-bold.mb-6.text-green-700 {
+    margin-bottom: 15px;
+}
+/* Apply Cairo font to plugin's admin page only */
+#custom-cod-settings input.mb-6, input.custom-input.mb-4 {
+    font-family: 'Cairo' !important;
+}
+#custom-cod-settings{
+        font-family: 'Cairo' !important;
+}
+.save_buttn {
+        font-family: 'Cairo' !important;
+}
+tbody.divide-y.divide-gray-300.tbody_form_inputs input,
+tbody.divide-y.divide-gray-300.tbody_form_inputs button,
+.div_last_btn button,
+select.custom-input.mb-6 {
+
+        font-family: 'Cairo' !important;
+}
+
+

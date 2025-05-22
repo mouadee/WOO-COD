@@ -1,0 +1,291 @@
+/* Add Cairo font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap');
+
+/* RTL for the whole form */
+.ccc-rtl {
+    direction: rtl;
+    font-family: 'Cairo', sans-serif; /* Apply Cairo font */
+    border: 1px solid #2a6a11;
+    padding: 20px;
+    max-width: 450px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.ccc-rtl h3 {
+    color: #2a6a11;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.price-container {
+    margin-bottom: 15px;
+}
+
+.price-new {
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+}
+
+.price-new small {
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+.price-old {
+    text-decoration: line-through;
+    color: #a0a0a0;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.product-info img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.product-info span {
+    font-size: 18px;
+}
+/* Center the heading text */
+.ccc-rtl h3 {
+    color: #2a6a11;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center; /* Center the text */
+}
+
+/* Input fields with RTL support and Cairo font */
+.ccc-rtl input[type=text],
+.ccc-rtl input[type=tel],
+.ccc-rtl input[type=number] {
+    direction: rtl;
+    text-align: right;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Cairo', sans-serif; /* Cairo font */
+}
+
+/* Quantity selector with RTL */
+/* Styling for the quantity selector container */
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Style for the quantity buttons */
+.quantity-selector button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 50%; /* Fully rounded buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none; /* Remove borders */
+}
+
+/* Hover effect for the quantity buttons */
+.quantity-selector button:hover {
+    background-color: #ddd; /* Change background on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Active state for buttons */
+.quantity-selector button:active {
+    transform: scale(1.05); /* Slight zoom effect on click */
+}
+
+/* Input field for quantity - centered number without borders or background */
+.quantity-selector input[type=number] {
+    width: 40px; /* Adjust width to match buttons */
+    height: 40px;
+    text-align: center; /* Center the number horizontally */
+    font-size: 20px;
+    font-family: 'Cairo', sans-serif;
+    padding: 0;
+    margin: 5px; /* Added margin to adjust alignment */
+    border: none; /* No border */
+    background: none; /* No background */
+    color: #333; /* Text color */
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    line-height: normal; /* Ensure the number is vertically centered */
+}
+
+/* Remove spinner on number input */
+.quantity-selector input[type=number]::-webkit-outer-spin-button,
+.quantity-selector input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#ccc-submit {
+    background-color: #2a6a11;  /* Dark green background */
+    color: white;               /* White text */
+    font-size: 18px;            /* Larger font size */
+    padding: 12px 0;            /* Padding top and bottom */
+    width: 100%;                /* Full width */
+    border: none;               /* Remove default border */
+    border-radius: 8px;         /* Rounded corners */
+    cursor: pointer;            /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    font-family: 'Cairo', sans-serif;
+}
+
+#ccc-submit:hover {
+    background-color: #22550f;  /* Slightly darker green on hover */
+}
+.green-text {
+    color: #238559; /* Green color */
+    font-weight: bold;
+}
+.delivery-note {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center; /* Center the whole line */
+}
+
+.bundle-offer-container {
+    background-color: #e2e8f0;  /* Light gray background */
+    border-radius: 8px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Hover effect for the bundle offer */
+.bundle-offer-container:hover {
+    background-color: #cbd5e0;  /* Slightly darker gray on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* When the offer is selected (click state) */
+.bundle-offer-container.selected {
+    border: 2px solid #38a169;  /* Green border to show it's selected */
+    background-color: #f0fdf4;  /* Light green background */
+}
+
+/* Offer text */
+.offer-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #4a5568;  /* Darker gray */
+    margin-bottom: 1rem;
+}
+
+/* Price section (before and after applying offer) */
+.price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.price-container .original-price {
+    text-decoration: line-through;
+    font-size: 1.2rem;
+    color: #e53e3e;  /* Red color for the original price */
+    margin-right: 0.5rem;
+}
+
+.price-container .updated-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e53e3e;  /* Red color for the updated price */
+}
+
+/* Checkbox styling */
+.form-checkbox {
+    border-radius: 0.375rem;
+    border: 2px solid #cbd5e0;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Checkbox checked state */
+.form-checkbox:checked {
+    background-color: #38a169;  /* Green color */
+    border-color: #38a169;
+}
+
+/* Label for the checkbox */
+.checkbox-label {
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin-left: 10px;
+}
+
+/* Final price updated */
+#final-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e53e3e;  /* Red color for final price */
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Text for the offer terms */
+.text-sm {
+    font-size: 0.875rem;
+    color: #718096;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+p.text-lg.text-gray-800 {
+    padding: 8px;
+    text-align: center;
+}
+/* Styling the offer container */
+div#offer-container {
+    background-color: #0c0d0e;
+    color: white;
+    cursor: pointer;
+    border-radius: 22px;
+    width: 80%;
+    margin: 17px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    display: flex;
+
+}
+div#offer-container:hover {
+    background-color: #878787;
+}
+/* Styling the plus icon */
+div#offer-container .plus-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: white;                    /* Ensuring the icon is white */
+}
+
+/* Styling the offer text */
+div#offer-container p {
+    font-size: 1rem;
+    color: white;
+    margin: 0;                      /* Remove margin */
+}
